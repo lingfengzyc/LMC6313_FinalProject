@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Day1-1</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+</head>
+    
+<body>
+    
+<div id="wrapper">
+ 
+
+<!--process bar-->
+<div id="bar">
+<progress id="progress1" min=0 max=100 name=money value=0 ></progress>      
+<progress id="progress2" min=0 max=100 name=emotion value=0></progress>
+<progress id="progress3" min=0 max=100 name=virus value=0></progress>
+</div>
+    
+<!--Choice Button-->
+<div id="choice">
+
+<button class="button" onclick="rumor()">It is a rumor</button><br><br>
+<button class="button" onclick="investigate()">investigate</button><br><br>
+<button class="button" onclick="indifferent()">indifferent</button><br><br>
+</div>
+
+<!--content-->
+<div id="content">
+ <img src="img/day1-1.png" alt="doctor">
+</div>
+    
+<!--<button onclick="nextPage()">Next</button>-->
+        
+
+</div>
+
+
+<script>
+    
+function rumor(){
+    
+    var showMoney=document.getElementById('progress1').value+=6;
+    var showVirus=document.getElementById('progress3').value+=10;
+    
+//    console.log(showValue);
+//    
+//    if (showValue == 18){
+//        alert("Hi");
+//    }
+//        
+
+}
+
+</script>
+    
+    </body>
+
+</html>
