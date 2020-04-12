@@ -1,5 +1,5 @@
 body {
-  background-image: url('img/bg.png');
+  background-image: url('img/bg2.png');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
@@ -8,21 +8,29 @@ body {
 #wrapper {
     margin-left:auto;
     margin-right:auto;
-    width:960px;
+    width:auto;
 }
 
-#choice{
+.choice{
   position: relative;
-  top: 380px;
-  left:400px;
+  top: 80px;
+  left:600px;
   width: 200px;
   height: 100px;
+  color:white;
     
 }
 
-.button {
+/*
+.day{
+ padding-bottom: 150px;
+}
+*/
+
+.button1 {
   background-color: #4eb5f1;
-  width:200px;
+  width:280px;
+  height:40px;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -36,10 +44,57 @@ body {
   margin: 4px 2px;
   cursor: pointer;
 }
-.button:hover {
+.button1:hover {
   background-color: #008CBA;
   color: white;
 }
+
+
+
+.button2 {
+  background-color: #4eb5f1;
+  width:280px;
+  height:40px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  border-radius:2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: #4eb5f1;
+  width:280px;
+  height:40px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  border-radius:2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button3:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
 
 
 progress {
@@ -66,27 +121,107 @@ progress::-moz-progress-bar {
   height: 18px;
   border-radius: 9px;
 }
-#bar{
+/*
+.bar{
   position: relative;
-  top: 80px;
+  top: 10px;
   left:1px;
   width:1020px;
- 
+}
+*/
+
+.textBar{
+   display: flex;
+   font-size:12px;
+   color:aliceblue;
+   font-family: Arial;
+   border-left:20px;
+   width:auto;
+   margin-left: 100px;
+}
+
+
+
+#ImgMoney{
+    position:fixed;
+   left:110px;
+   display:flex;
+   padding:20px;
+   padding-top: 12px;
+   padding-left:10px; 
+   padding-bottom: 0;
+  
+
+}
+
+#text1{
+    position:fixed;
+    left:160px;
+}
+
+#ImgHeart{
+   position:fixed;
+   left:350px;
+   display:flex;
+   padding:20px;
+   padding-top: 15px;
+   padding-left:140px;
+   padding-bottom: 0;
+   
+
+}
+
+#text2{
+    position:fixed;
+    left:530px;
+}
+
+#ImgVirus{
+   position:fixed;
+   left:750px;
+   display:flex;
+   padding:20px;
+   padding-top: 15px;
+   padding-left:100px;
+   padding-bottom: 0;
+   
+}
+
+#text3{
+    position:fixed;
+    left:900px;
+}
+
+
+
+.processBar{
+   display: flex;
+   width:auto;
+   margin-left: 100px;
+   margin-top: 50px;
+   
 }
 
 #progress1{
-    margin-right: 270px;
+    margin-left: 50px;
 }
+
 
 #progress2{
-    margin-right: 220px;
+    margin-left: 210px;
 }
 
-#content{
-    position:relative;
-    top:160px;
-    left:30px;
-    width:300px;
-    
+#progress3{
+    margin-left: 200px;
 }
+
+
+
+#content{
+    position:absolute;
+    top:160px;
+    left:180px;   
+}
+
+
 
