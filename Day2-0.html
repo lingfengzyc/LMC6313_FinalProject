@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Day2-0</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+</head>
+    
+<body>
+
+<!--the whole page-->
+<div id="wrapper">
+ 
+
+<!--process bar-->
+<div class="bar">
+   
+    <div class="textBar">
+   
+        <img id="ImgMoney" src="img/IconCoins.png" alt="moneyIcon" width=30px
+   height=30px>
+        <h1 id="text1">Economic Health</h1>
+        <img id="ImgHeart" src="img/heart.svg" alt="heartIcon" width=30px
+   height=30px>
+        <h1 id="text2">Public Trust</h1>
+        <img id="ImgVirus" src="img/IconVirus.png" alt="virusIcon" width=30px
+   height=30px>
+        <h1 id="text3">Virus Containment</h1>
+     </div>
+    
+
+    <div class="processBar">
+        <progress id="progress1" min=0 max=100 name=money value=90 ></progress>
+        <progress id="progress2" min=0 max=100 name=emotion value=90></progress>
+        <progress id="progress3" min=0 max=100 name=virus value=90></progress>
+    </div>
+    
+   
+    
+</div>
+<!--需要改的   -->
+<!--Choice Button-->
+<div class="choice">
+<h1 id="day">DAY2-0</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</div>
+<!--content-->
+
+<div id="content">
+ <img src="img/day1-3.png" alt="marathon">
+</div>
+    
+<!--<button onclick="nextPage()">Next</button>-->
+        
+
+</div>
+
+
+<script>
+
+
+var showMoney=document.getElementById('progress1').value=localStorage.getItem('Money');
+var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
+var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
+    
+
+    
+</script>
+    
+    </body>
+
+</html>

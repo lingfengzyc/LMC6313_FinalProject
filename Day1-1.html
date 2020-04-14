@@ -63,7 +63,6 @@
  <img src="img/content_D1_1.png" alt="doctor">
 </div>
     
-<!--<button onclick="nextPage()">Next</button>-->
         
 
 </div>
@@ -80,28 +79,50 @@ localStorage.setItem('Virus',showVirus);
     
 function rumor(){
     
+ if ((showMoney<=95)&&(showHeart<=95)&&(showVirus<=95)){
+
 //    Heart
-    showHeart=document.getElementById('progress2').value-=8;
+    showHeart=document.getElementById('progress2').value-=10;
     localStorage.setItem('Heart',showHeart);
 //    Virus
-    showVirus=document.getElementById('progress3').value-=8;
+    showVirus=document.getElementById('progress3').value-=10;
     localStorage.setItem('Virus',showVirus);
+     
 // NEXT PAGE
     location.href='Day1-2.html';
+    
+  }else{
+      
+// NEXT PAGE
+    location.href='Day1-2.html';
+  }
+
 }
 
 function investigate(){
     
+  if ((showMoney<=95)&&(showHeart<=95)&&(showVirus<=95)){
+
 //    Money
-    showMoney=document.getElementById('progress1').value-=8;
+    showMoney=document.getElementById('progress1').value-=10;
     localStorage.setItem('Money',showMoney);
 // NEXT PAGE
     location.href='Day1-2.html';
+         
+  }else{
+// NEXT PAGE
+    location.href='Day1-2.html';
+  }
+
+
 
 }
     
 function indifferent(){
     
+
+ if ((showMoney<=95)&&(showHeart<=95)&&(showVirus<=95)){
+   
 //    Heart
     showHeart=document.getElementById('progress2').value-=8;
     localStorage.setItem('Heart',showHeart);
@@ -110,6 +131,14 @@ function indifferent(){
     localStorage.setItem('Virus',showVirus);
 // NEXT PAGE
     location.href='Day1-2.html';
+     
+  }else{
+// NEXT PAGE
+    location.href='Day1-2.html';
+  }
+    
+// NEXT PAGE
+    
 }
 
 
