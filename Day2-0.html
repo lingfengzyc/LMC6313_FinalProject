@@ -41,8 +41,14 @@
 </div>
 <!--需要改的   -->
 <!--Choice Button-->
+<div id="newsDay">
+<h1>DAY2-0</h1>
+<br>
+<br>
+<img src="img/newsIcon.png" alt="news">
+</div>
 <div class="choice">
-<h1 id="day">DAY2-0</h1>
+
 <br>
 <br>
 <br>
@@ -56,8 +62,16 @@
 <!--content-->
 
 <div id="content">
- <img src="img/day1-3.png" alt="marathon">
+  <img id="newsBg" src="img/newBG.png" alt="news">
+  <div id=newsContent>
+    <h1>News1</h1>
+    <h1>News2</h1>
+    <h1 id="News3">News3</h1>
+  </div>
+    
 </div>
+    
+    
     
 <!--<button onclick="nextPage()">Next</button>-->
         
@@ -71,6 +85,12 @@
 var showMoney=document.getElementById('progress1').value=localStorage.getItem('Money');
 var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
 var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
+
+if (showVirus<80){
+     document.getElementById("News3").innerHTML = "This is News4!!";
+}
+
+
     
 
     

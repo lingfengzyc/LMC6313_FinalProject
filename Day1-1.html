@@ -59,7 +59,7 @@
 </div>
 <!--content-->
 
-<div id="content">
+<div id="contentImg">
  <img src="img/content_D1_1.png" alt="doctor">
 </div>
     
@@ -79,7 +79,7 @@ localStorage.setItem('Virus',showVirus);
     
 function rumor(){
     
- if ((showMoney<=95)&&(showHeart<=95)&&(showVirus<=95)){
+ if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
 
 //    Heart
     showHeart=document.getElementById('progress2').value-=10;
@@ -101,7 +101,7 @@ function rumor(){
 
 function investigate(){
     
-  if ((showMoney<=95)&&(showHeart<=95)&&(showVirus<=95)){
+  if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
 
 //    Money
     showMoney=document.getElementById('progress1').value-=10;
@@ -133,6 +133,7 @@ function indifferent(){
     location.href='Day1-2.html';
      
   }else{
+    
 // NEXT PAGE
     location.href='Day1-2.html';
   }

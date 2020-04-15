@@ -11,6 +11,7 @@ body {
     width:auto;
 }
 
+
 .choice{
   position: relative;
   top: 80px;
@@ -21,11 +22,20 @@ body {
     
 }
 
-/*
-.day{
- padding-bottom: 150px;
+#newsDay{
+  position:relative;
+  top: 80px;
+  left:50px;
+  width: 200px;
+  height: 100px;
+  color:white;
 }
-*/
+
+#newsDay,h1{
+    position:relative;
+    left:30px;
+}
+
 
 .button1 {
   background-color: #4eb5f1;
@@ -123,33 +133,6 @@ progress::-moz-progress-bar {
 }
 
 
-/*
-progress[value^="6"]::-moz-progress-bar,
-progress[value^="7"]::-moz-progress-bar,
-progress[value^="8"]::-moz-progress-bar,
-progress[value^="9"]::-moz-progress-bar,
-progress[value^="10"]::-moz-progress-bar,
-progress[value^="11"]::-moz-progress-bar{
-	background-color:#0E6E75;
-}
-
-progress[value^="6"]::-webkit-progress-value,
-progress[value^="7"]::-webkit-progress-value,
-progress[value^="8"]::-webkit-progress-value,
-progress[value^="9"]::-webkit-progress-value,
-progress[value^="10"]::-webkit-progress-value,
-progress[value^="11"]::-webkit-progress-value{
-	background-color:#0E6E75;
-}
-*/
-/*
-progress[value="100"]::-moz-progress-bar{
-	background-color:#0E6E75;
-}
-progress[value="100"]::-webkit-progress-value{
-	background-color:#0E6E75;
-}
-*/
 
 progress[value^="0"]::-moz-progress-bar,
 progress[value^="1"]::-moz-progress-bar,
@@ -279,10 +262,39 @@ progress[value="106"]::-webkit-progress-value{
 
 
 #content{
-    position:absolute;
-    top:160px;
+    position:relative;
+    top:100px;
     left:180px;   
 }
+
+#contentImg{
+    position:absolute;
+    top:130px;
+    left:180px;   
+}
+
+#content,#newsContent{
+
+    position:absolute;
+    top:100px;
+    width:570px;
+    z-index:1;
+    left:180px;
+/*
+    position:relative;
+    top:20px;
+    left:100px;   
+*/
+}
+
+#content,#newsBg{
+/*  position:absolute;*/
+    top:150px;
+    left:320px;   
+}
+
+
+
 
 
 
