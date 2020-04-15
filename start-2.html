@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Start1-1</title>
+    <link href="style2.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+<!--the whole page-->
+<div id="wrapper">
+
+
+<!--content-->
+
+<div id="startContent">
+    
+  <img id="startTitle" src="img/title.png" alt="title">
+  <br>
+ 
+    
+</div>
+ <div id="instruction">
+      <h1>Now you are a mayor of a big city and faced with an unknown virus, your responsibility is to control the virus as well as balancing the economy and public trust.</h1>
+  </div>
+    
+   <button id="Next" onclick="nextPage()">OK</button>  
+
+</div>
+
+
+<script>
+
+
+var showMoney=document.getElementById('progress1').value=localStorage.getItem('Money');
+var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
+var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
+
+if (showVirus<80){
+     document.getElementById("News3").innerHTML = "This is News4!!";
+}
+
+function nextPage(){
+    location.href='Day1-1.html';
+}
+    
+
+    
+</script>
+    
+    </body>
+
+</html>

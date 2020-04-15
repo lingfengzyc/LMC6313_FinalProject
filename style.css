@@ -1,3 +1,4 @@
+
 body {
   background-image: url('img/bg2.png');
   background-repeat: no-repeat;
@@ -5,11 +6,14 @@ body {
   background-size: cover;
 }
 
+
 #wrapper {
     margin-left:auto;
     margin-right:auto;
     width:auto;
 }
+
+
 
 
 .choice{
@@ -259,10 +263,16 @@ progress[value="106"]::-webkit-progress-value{
     margin-left: 200px;
 }
 
+#startContent{
+    position:fixed;
+    top:50px;
+    left:390px;   
+}
 
 
 #content{
     position:relative;
+    width:200px;
     top:100px;
     left:180px;   
 }
@@ -289,9 +299,38 @@ progress[value="106"]::-webkit-progress-value{
 
 #content,#newsBg{
 /*  position:absolute;*/
-    top:150px;
-    left:320px;   
+    top:140px;
+    left:320px;  
+    height:400px;
 }
+
+#Next{
+  
+  position:fixed;
+  bottom:40px;
+  left:600px;
+  
+  background-color: #4eb5f1;
+  width:180px;
+  height:40px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  border-radius:2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#Next:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
 
 
 
