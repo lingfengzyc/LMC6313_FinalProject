@@ -78,7 +78,7 @@ var showHeart=document.getElementById('progress2').value=localStorage.getItem('H
 var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
     
 function yes(){
-if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+
 //    Money
     showMoney=document.getElementById('progress1').value-=5;
     localStorage.setItem('Money',showMoney);
@@ -92,25 +92,17 @@ if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
     localStorage.setItem('Virus',showVirus);
     
     location.href='Day2-0.html';
-}else{
-//      return false;
-    location.href='Day2-0.html';
-  }
-// NEXT PAGE
+
     
 }
 
 function no(){
-if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+
 //    Heart
     showHeart=document.getElementById('progress2').value-=5;
     localStorage.setItem('Heart',showHeart);
     location.href='Day2-0.html';
     
-}else{
-
-        location.href='Day2-0.html';
-  }
 
 }
 

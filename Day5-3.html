@@ -82,7 +82,7 @@ var totalScore=Number(showMoney)+Number(showHeart)+Number(showVirus);
 
     
 function Choice1(){
-if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+
 //    Money
     showMoney=document.getElementById('progress1').value-=10;
     localStorage.setItem('Money',showMoney);
@@ -91,61 +91,34 @@ if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
     showHeart=document.getElementById('progress2').value+=5;
     localStorage.setItem('Heart',showHeart);
     
-//if (totalScore<120){
-//    location.href='Result1.html';
-//}else{
-//    location.href='Result2.html';
+if (totalScore<120){
+    location.href='Result1.html';
+}else{
+    location.href='Result2.html';
 }
     
     
-}else{
-//if (totalScore<120){
-//    location.href='Result1.html';
-//}else{
-//    location.href='Result2.html';
-//}
-  }
-// NEXT PAGE
+
     
 }
 
 function Choice2(){
-if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+
 //    Virus
     showVirus=document.getElementById('progress3').value-=10;
     localStorage.setItem('Virus',showVirus);
 //    Heart
     showHeart=document.getElementById('progress2').value-=5;
     localStorage.setItem('Heart',showHeart);
-    
-     location.href='Result1.html';
-}else{
 
-     location.href='Result1.html';
-  }
+if (totalScore<120){
+    location.href='Result1.html';
+}else{
+    location.href='Result2.html';
+
 
 }
-
-//function Choice3(){
-//if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
-////    Money
-//    showMoney=document.getElementById('progress1').value-=5;
-//    localStorage.setItem('Money',showMoney);
-////    Heart
-//    showHeart=document.getElementById('progress2').value+=5;
-//    localStorage.setItem('Heart',showHeart);
-////    Virus
-//    showVirus=document.getElementById('progress3').value-=5;
-//    localStorage.setItem('Virus',showVirus);
-//    
-//      location.href='Day5-0.html';
-//}else{
-//
-//      location.href='Day5-0.html';
-//  }
-//
-//}
-
+}
     
 //Mouseover and Mouseout 鼠标移入移出
 var money = document.getElementById('ImgMoney');
