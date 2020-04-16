@@ -30,7 +30,7 @@ body {
   position:relative;
   top: 80px;
   left:50px;
-  width: 200px;
+  width: 300px;
   height: 100px;
   color:white;
 }
@@ -40,6 +40,15 @@ body {
     left:30px;
 }
 
+#newsDay,h2{
+    position:relative;
+    left:20px;
+    width:340px;
+}
+
+b{
+    color:#f44336;
+}
 
 .button1 {
   background-color: #4eb5f1;
@@ -159,12 +168,14 @@ progress[value^="5"]::-webkit-progress-value{
 
 /*笨办法 要改*/
 progress[value="100"]::-moz-progress-bar,
-progress[value="106"]::-moz-progress-bar{
+progress[value="104"]::-moz-progress-bar,
+progress[value="105"]::-moz-progress-bar{
 	background-color:#0E6E75;
 }
 
 progress[value="100"]::-webkit-progress-value,
-progress[value="106"]::-webkit-progress-value{
+progress[value="104"]::-webkit-progress-value,
+progress[value="105"]::-webkit-progress-value{
 	background-color:#0E6E75;
 }
 
@@ -304,6 +315,12 @@ progress[value="106"]::-webkit-progress-value{
     height:400px;
 }
 
+#resultPic{
+    position:fixed;
+    top:140px;
+    left:520px;  
+    height:400px;
+}
 #Next{
   
   position:fixed;

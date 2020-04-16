@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Day2-3</title>
+    <title>Day4-3</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
@@ -42,7 +42,7 @@
 <!--需要改的   -->
 <!--Choice Button-->
 <div class="choice">
-<h1 id="day">DAY2-3</h1>
+<h1 id="day">DAY4-3</h1>
 <br>
 <br>
 <br>
@@ -50,17 +50,17 @@
 <br>
 <br>
 <br>
-<button class="button1" onmouseover="mouseover1()" onmouseout="mouseout1()" onclick="Choice1()">No, it will violate citizen’s privacy </button><br><br> 
+<button class="button1" onmouseover="mouseover1()" onmouseout="mouseout1()" onclick="Choice1()">Yes, definitely</button><br><br> 
     
-<button class="button2" onmouseover="mouseover2()" onmouseout="mouseout2()" onclick="Choice2()">Yes, it is important</button><br><br>
+<button class="button2" onmouseover="mouseover2()" onmouseout="mouseout2()" onclick="Choice2()">No, we don’t have such money</button><br><br>
     
-<!--<button class="button3" onmouseover="mouseover3()" onmouseout="mouseout3()" onclick="Choice3()">Indifferent,decide later</button><br><br>-->
+<button class="button3" onmouseover="mouseover3()" onmouseout="mouseout3()" onclick="Choice3()">Free only for the test</button><br><br>
 
 </div>
 <!--content-->
 
 <div id="contentImg">
- <img src="img/day2-3.png" alt="zero">
+ <img src="img/day4-3.png" alt="zero">
 </div>
     
 <!--<button onclick="nextPage()">Next</button>-->
@@ -79,22 +79,22 @@ var showVirus=document.getElementById('progress3').value=localStorage.getItem('V
     
 function Choice1(){
 if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
-////    Money
-//    showMoney=document.getElementById('progress1').value-=5;
-//    localStorage.setItem('Money',showMoney);
+//    Money
+    showMoney=document.getElementById('progress1').value-=10;
+    localStorage.setItem('Money',showMoney);
 
 //    Heart
-    showHeart=document.getElementById('progress2').value-=5;
+    showHeart=document.getElementById('progress2').value+=10;
     localStorage.setItem('Heart',showHeart);
     
-//    Virus
-    showVirus=document.getElementById('progress3').value-=5;
-    localStorage.setItem('Virus',showVirus);
+////    Virus
+//    showVirus=document.getElementById('progress3').value-=5;
+//    localStorage.setItem('Virus',showVirus);
     
-    location.href='Day3-0.html';
+    location.href='Day5-0.html';
 }else{
 //      return false;
-    location.href='Day3-0.html';
+    location.href='Day5-0.html';
   }
 // NEXT PAGE
     
@@ -102,32 +102,40 @@ if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
 
 function Choice2(){
 if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
-//    Money
-    showMoney=document.getElementById('progress1').value-=10;
-    localStorage.setItem('Money',showMoney);
+//    Virus
+    showVirus=document.getElementById('progress3').value-=10;
+    localStorage.setItem('Virus',showVirus);
 //    Heart
-    showHeart=document.getElementById('progress2').value+=5;
+    showHeart=document.getElementById('progress2').value-=5;
     localStorage.setItem('Heart',showHeart);
-    location.href='Day3-0.html';
+    
+     location.href='Day5-0.html';
 }else{
 
-        location.href='Day3-0.html';
+     location.href='Day5-0.html';
   }
 
 }
 
-//function Choice3(){
-//if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
-////    Heart
-//    showHeart=document.getElementById('progress2').value-=5;
-//    localStorage.setItem('Heart',showHeart);
-//      location.href='Day3-0.html';
-//}else{
-//
-//        location.href='Day3-0.html';
-//  }
-//
-//}
+function Choice3(){
+if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+//    Money
+    showMoney=document.getElementById('progress1').value-=5;
+    localStorage.setItem('Money',showMoney);
+//    Heart
+    showHeart=document.getElementById('progress2').value+=5;
+    localStorage.setItem('Heart',showHeart);
+//    Virus
+    showVirus=document.getElementById('progress3').value-=5;
+    localStorage.setItem('Virus',showVirus);
+    
+      location.href='Day5-0.html';
+}else{
+
+      location.href='Day5-0.html';
+  }
+
+}
 
     
 //Mouseover and Mouseout 鼠标移入移出
@@ -139,34 +147,34 @@ var virus = document.getElementById('ImgVirus');
 // Choise1
 function mouseover1(){
 
-//    money.width=35;
-//    money.height= 35;
+    money.width=35;
+    money.height= 35;
     
     heart.width=35;
     heart.height= 35;
-
-    virus.width=35;
-    virus.height= 35;
+//
+//    virus.width=35;
+//    virus.height= 35;
     
 }
 
 function mouseout1(){
-//    
-//    money.width=30;
-//    money.height= 30;
+    
+    money.width=30;
+    money.height= 30;
 
     heart.width=30;
     heart.height= 30;
 
-    virus.width=30;
-    virus.height= 30;
+//    virus.width=30;
+//    virus.height= 30;
 }
 
 // Choise2
 function mouseover2(){
     
-    money.width=35;
-    money.height= 35;
+    virus.width=35;
+    virus.height= 35;
     heart.width=35;
     heart.height= 35;
 
@@ -174,29 +182,35 @@ function mouseover2(){
     
 function mouseout2(){
     
-    money.width=35;
-    money.height= 35;
+    virus.width=30;
+    virus.height= 30;
     heart.width=30;
     heart.height= 30;
 
 }
 
-// Choise3
-//function mouseover3(){
-//    heart.width=35;
-//    heart.height= 35;
-//
-//    virus.width=35;
-//    virus.height= 35;
-//}
-//    
-//function mouseout3(){
-//    heart.width=30;
-//    heart.height= 30;
-//
-//    virus.width=30;
-//    virus.height= 30;
-//}
+ //Choise3
+function mouseover3(){
+    virus.width=35;
+    virus.height= 35;
+    
+    heart.width=35;
+    heart.height= 35;
+
+    money.width=35;
+    money.height=35;
+}
+    
+function mouseout3(){
+    virus.width=30;
+    virus.height= 30;
+    
+    heart.width=30;
+    heart.height=30;
+
+    money.width=30;
+    money.height=30;
+}
     
 </script>
     

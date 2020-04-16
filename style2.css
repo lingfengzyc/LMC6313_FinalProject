@@ -23,9 +23,10 @@ body {
 #content,#newsBg{
 /*  position:absolute;*/
     top:140px;
-    left:320px;  
+    left:390px;  
     height:400px;
 }
+
 
 #instruction{
     position:relative;

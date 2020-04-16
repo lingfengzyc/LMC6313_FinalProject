@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Day4-0</title>
+    <title>Result1</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
@@ -42,10 +42,14 @@
 <!--需要改的   -->
 <!--Choice Button-->
 <div id="newsDay">
-<h1>DAY4</h1>
+<h1>Final Transcript</h1>
 <br>
 <br>
-<img src="img/newsIcon.png" alt="news">
+<br>
+<h2>Sorry, your total score is lower than 120, so you lose your mayor position...</h2>
+<br>
+<br>
+<!--<img src="img/newsIcon.png" alt="news">-->
 </div>
 <div class="choice">
 
@@ -62,18 +66,20 @@
 <!--content-->
 
 <div id="content">
-  <img id="newsBg" src="img/newBG.png" alt="news">
+  <img id="resultPic" src="img/result-fail.png" alt="news">
+<!--
   <div id=newsContent>
     <h1>News1</h1>
     <h1>News2</h1>
     <h1 id="News3">News3</h1>
   </div>
+-->
     
 </div>
     
     
     
-<button id="Next" onclick="nextPage()">Next</button>
+<button id="Next" onclick="nextPage()">Replay</button>
         
 
 </div>
@@ -86,12 +92,10 @@ var showMoney=document.getElementById('progress1').value=localStorage.getItem('M
 var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
 var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
 
-if (showVirus<80){
-     document.getElementById("News3").innerHTML = "This is News4!!";
-}
+
 
 function nextPage(){
-    location.href='Day4-1.html';
+    location.href='start-1.html';
 }
     
 
