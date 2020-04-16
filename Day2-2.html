@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Day1-3</title>
+    <title>Day2-2</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
@@ -42,7 +42,7 @@
 <!--需要改的   -->
 <!--Choice Button-->
 <div class="choice">
-<h1 id="day">DAY1-3</h1>
+<h1 id="day">DAY2-2</h1>
 <br>
 <br>
 <br>
@@ -50,68 +50,100 @@
 <br>
 <br>
 <br>
-<button class="button1" onmouseover="mouseover1()" onmouseout="mouseout1()" onclick="yes()">Yes</button><br><br> 
+<button class="button1" onmouseover="mouseover1()" onmouseout="mouseout1()" onclick="choice1()">OK, don’t worry, ask people to disembark and do self-isolation</button><br><br> 
     
-<button class="button2" onclick="no()" onmouseover="mouseover2()" onmouseout="mouseout2()">No</button><br><br>
+<button class="button2" onmouseover="mouseover2()" onmouseout="mouseout2()" onclick="choice2()" >No, reject it</button><br><br>
     
-<!--<button class="button3" onclick="indifferent()"  onmouseover="mouseover3()" onmouseout="mouseout3()">Indifferent,decide later</button><br><br>-->
+<button class="button3" onmouseover="mouseover3()" onmouseout="mouseout3()" onclick="choice3()">OK, but need virus test and forced quarantine</button><br><br>
 
 </div>
 <!--content-->
 
 <div id="contentImg">
- <img src="img/day1-3.png" alt="firework">
+ <img src="img/day2-2.png" alt="marathon">
 </div>
-    
-<!--<button onclick="nextPage()">Next</button>-->
+
         
 
 </div>
 
 
-    
 <script>
+
 
 
 var showMoney=document.getElementById('progress1').value=localStorage.getItem('Money');
 var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
 var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
     
-function yes(){
-if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
-//    Money
-    showMoney=document.getElementById('progress1').value-=5;
-    localStorage.setItem('Money',showMoney);
 
+function choice1(){
+    
+if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+////    Money
+//    showMoney=document.getElementById('progress1').value+=10;
+//    localStorage.setItem('Money',showMoney);
+    
 //    Heart
-    showHeart=document.getElementById('progress2').value+=5;
+    showHeart=document.getElementById('progress2').value-=5;
     localStorage.setItem('Heart',showHeart);
     
 //    Virus
     showVirus=document.getElementById('progress3').value-=10;
     localStorage.setItem('Virus',showVirus);
     
-    location.href='Day2-0.html';
-}else{
-//      return false;
-    location.href='Day2-0.html';
-  }
 // NEXT PAGE
+    location.href='Day2-3.html';
     
+ }else{
+
+// NEXT PAGE
+    location.href='Day2-3.html';
+ }
+    
+
 }
 
-function no(){
+
+
+function choice2(){
+    
 if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
 //    Heart
     showHeart=document.getElementById('progress2').value-=5;
     localStorage.setItem('Heart',showHeart);
-    location.href='Day2-0.html';
+
+// NEXT PAGE
+    location.href='Day2-3.html';
     
-}else{
+ }else{
 
-        location.href='Day2-0.html';
-  }
+// NEXT PAGE
+    location.href='Day2-3.html';
+ }
+    
+}
+    
+function choice3(){
+    
+if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
+//    Money
+    showMoney=document.getElementById('progress1').value-=10;
+    localStorage.setItem('Money',showMoney);
+    
+//    Heart
+    showHeart=document.getElementById('progress2').value+=5;
+    localStorage.setItem('Heart',showHeart);
 
+// NEXT PAGE
+    location.href='Day2-3.html';
+    
+ }else{
+
+// NEXT PAGE
+    location.href='Day2-3.html';
+ }
+    
 }
 
     
@@ -124,8 +156,8 @@ var virus = document.getElementById('ImgVirus');
 // Choise1
 function mouseover1(){
 
-    money.width=35;
-    money.height= 35;
+//    money.width=35;
+//    money.height= 35;
     
     heart.width=35;
     heart.height= 35;
@@ -136,9 +168,9 @@ function mouseover1(){
 }
 
 function mouseout1(){
-    
-    money.width=30;
-    money.height= 30;
+//    
+//    money.width=30;
+//    money.height= 30;
 
     heart.width=30;
     heart.height= 30;
@@ -160,22 +192,22 @@ function mouseout2(){
 
 }
 
-// Choise3
-//function mouseover3(){
-//    heart.width=35;
-//    heart.height= 35;
-//
-//    virus.width=35;
-//    virus.height= 35;
-//}
-//    
-//function mouseout3(){
-//    heart.width=30;
-//    heart.height= 30;
-//
-//    virus.width=30;
-//    virus.height= 30;
-//}
+ //Choise3
+function mouseover3(){
+    heart.width=35;
+    heart.height= 35;
+
+    money.width=35;
+    money.height= 35;
+}
+    
+function mouseout3(){
+    heart.width=30;
+    heart.height= 30;
+
+    money.width=30;
+    money.height= 30;
+}
     
 </script>
     

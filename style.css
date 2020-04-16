@@ -20,7 +20,7 @@ body {
   position: relative;
   top: 80px;
   left:600px;
-  width: 200px;
+  width: 300px;
   height: 100px;
   color:white;
     
@@ -43,8 +43,8 @@ body {
 
 .button1 {
   background-color: #4eb5f1;
-  width:280px;
-  height:40px;
+  width:300px;
+  height:auto;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -67,8 +67,8 @@ body {
 
 .button2 {
   background-color: #4eb5f1;
-  width:280px;
-  height:40px;
+  width:300px;
+  height:auto;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -89,8 +89,8 @@ body {
 
 .button3 {
   background-color: #4eb5f1;
-  width:280px;
-  height:40px;
+  width:300px;
+  height:auto;
   border: none;
   color: white;
   padding: 15px 32px;
