@@ -168,13 +168,13 @@ progress[value^="5"]::-webkit-progress-value{
 
 /*笨办法 要改*/
 progress[value="100"]::-moz-progress-bar,
-progress[value="104"]::-moz-progress-bar,
+progress[value="110"]::-moz-progress-bar,
 progress[value="105"]::-moz-progress-bar{
 	background-color:#0E6E75;
 }
 
 progress[value="100"]::-webkit-progress-value,
-progress[value="104"]::-webkit-progress-value,
+progress[value="110"]::-webkit-progress-value,
 progress[value="105"]::-webkit-progress-value{
 	background-color:#0E6E75;
 }
@@ -297,10 +297,11 @@ progress[value="105"]::-webkit-progress-value{
 #content,#newsContent{
 
     position:absolute;
-    top:100px;
+    top:30px;
     width:570px;
     z-index:1;
-    left:180px;
+    left:60px;
+    font-size:14px;
 /*
     position:relative;
     top:20px;

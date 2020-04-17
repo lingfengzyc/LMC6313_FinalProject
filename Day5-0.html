@@ -64,9 +64,9 @@
 <div id="content">
   <img id="newsBg" src="img/newBG.png" alt="news">
   <div id=newsContent>
-    <h1>News1</h1>
-    <h1>News2</h1>
-    <h1 id="News3">News3</h1>
+    <h1>Georgia governor wants to reopen the beach to relieve people’s anxiety due to the self-isolation.</h1>
+    <h1>Coronavirus jitters send Dow swooning to worst-ever point loss, closes at near 3-year low.</h1>
+    <h1 id="News3"></h1>
   </div>
     
 </div>
@@ -86,8 +86,8 @@ var showMoney=document.getElementById('progress1').value=localStorage.getItem('M
 var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
 var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
 
-if (showVirus<80){
-     document.getElementById("News3").innerHTML = "This is News4!!";
+if (showVirus<30){
+     document.getElementById("News3").innerHTML = "Your city's hospital is full of patients now, we need help.";
 }
 
 function nextPage(){
