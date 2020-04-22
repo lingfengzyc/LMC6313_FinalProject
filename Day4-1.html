@@ -81,9 +81,7 @@ function choice1(){
 //    Heart
     showHeart=document.getElementById('progress2').value+=5;
     localStorage.setItem('Heart',showHeart);
-//    Money
-    showMoney=document.getElementById('progress1').value+=5;
-    localStorage.setItem('Money',showMoney);
+
      
 // NEXT PAGE
     location.href='Day4-2.html';
@@ -112,31 +110,6 @@ function choice2(){
 
 }
     
-//function choice3(){
-//    
-//
-// if ((showMoney<=100)&&(showHeart<=100)&&(showVirus<=100)){
-//   
-////    Heart
-//    showHeart=document.getElementById('progress2').value-=5;
-//    localStorage.setItem('Heart',showHeart);
-////    Virus
-//    showVirus=document.getElementById('progress3').value-=10;
-//    localStorage.setItem('Virus',showVirus);
-//// NEXT PAGE
-//    location.href='Day3-2.html';
-//     
-//  }else{
-//    
-//// NEXT PAGE
-//    location.href='Day3-2.html';
-//  }
-//    
-//// NEXT PAGE
-//    
-//}
-
-
 
 
     
@@ -152,22 +125,20 @@ function mouseover1(){
     heart.width=35;
     heart.height= 35;
 
-    money.width=35;
-    money.height= 35;
+ 
 }
 
 function mouseout1(){
     heart.width=30;
     heart.height= 30;
 
-    money.width=30;
-    money.height= 30;
 }
 
 // Choise2
 function mouseover2(){
     virus.width=35;
     virus.height= 35;
+    
     heart.width=35;
     heart.height= 35;
 
@@ -184,23 +155,6 @@ function mouseout2(){
 
 }
 
-//// Choise3
-//function mouseover3(){
-//    heart.width=35;
-//    heart.height= 35;
-//
-//    virus.width=35;
-//    virus.height= 35;
-//    
-//}
-//    
-//function mouseout3(){
-//    heart.width=30;
-//    heart.height= 30;
-//
-//    virus.width=30;
-//    virus.height= 30;
-//}
     
 </script>
     

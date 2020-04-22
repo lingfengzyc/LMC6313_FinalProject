@@ -30,10 +30,15 @@ body {
 
 #instruction{
     position:relative;
-    top:270px;
+    top:230px;
     left:350px; 
-    width:650px;
+    width:680px;
     color:white;
+    font-size:30px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
 }
 
 #Next{

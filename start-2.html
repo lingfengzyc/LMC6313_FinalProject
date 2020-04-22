@@ -1,17 +1,26 @@
 <html>
 <head>
-    <title>Start1-1</title>
+    <title>Start1-2</title>
     <link href="style2.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Raleway&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
+ 
 
 <!--the whole page-->
 <div id="wrapper">
 
+
+    
+ <audio autoplay hidden>
+     <source src="audio/typing2.wav" type="audio/wav">
+       If you're reading this, audio isn't supported. 
+    </audio>
 
 <!--content-->
 
@@ -23,7 +32,7 @@
     
 </div>
  <div id="instruction">
-      <h1>Now you are a mayor of a big city and faced with an unknown virus, your responsibility is to control the virus as well as balancing the economy and public trust.</h1>
+<!--      <h1>Now you are a mayor of a big city and faced with an unknown virus, your responsibility is to control the virus as well as balancing the economy and public trust.</h1>-->
   </div>
     
    <button id="Next" onclick="nextPage()">OK</button>  
@@ -34,17 +43,25 @@
 <script>
 
 
-var showMoney=document.getElementById('progress1').value=localStorage.getItem('Money');
-var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
-var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
-
-if (showVirus<80){
-     document.getElementById("News3").innerHTML = "This is News4!!";
-}
-
 function nextPage(){
     location.href='Day1-1.html';
 }
+
+var i=0,text;
+text="Now you are a mayor of a big city and faced with an unknown virus, your responsibility is to control the virus as well as balancing the economy and public trust."
+
+function typing(){
+    if(i<text.length){
+        document.getElementById("instruction").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,50);
+    }
+}
+    
+typing();
+    
+    
+
     
 
     
