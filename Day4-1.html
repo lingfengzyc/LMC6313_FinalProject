@@ -126,12 +126,17 @@ var money = document.getElementById('ImgMoney');
 var heart = document.getElementById('ImgHeart');
 var virus = document.getElementById('ImgVirus');
 
-
+var moneyText = document.getElementById('text1');
+var heartText = document.getElementById('text2');
+var virusText = document.getElementById('text3');
+    
 // Choise1
 function mouseover1(){
 
     heart.width=35;
     heart.height= 35;
+    
+    heartText.style.color='#ebc334';
 
  
 }
@@ -139,6 +144,8 @@ function mouseover1(){
 function mouseout1(){
     heart.width=30;
     heart.height= 30;
+    
+    heartText.style.color='white';
 
 }
 
@@ -149,6 +156,9 @@ function mouseover2(){
     
     heart.width=35;
     heart.height= 35;
+    
+    heartText.style.color='#ebc334';
+    virusText.style.color='#ebc334';
 
 
 }
@@ -160,6 +170,9 @@ function mouseout2(){
 
     virus.width=30;
     virus.height=30;
+    
+    heartText.style.color='white';
+    virusText.style.color='white';
 
 }
 

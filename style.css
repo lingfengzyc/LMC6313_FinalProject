@@ -203,7 +203,7 @@ progress[value="105"]::-webkit-progress-value{
 
 #ImgMoney{
     position:fixed;
-   left:110px;
+   left:100px;
    display:flex;
    padding:20px;
    padding-top: 12px;
@@ -220,7 +220,7 @@ progress[value="105"]::-webkit-progress-value{
 
 #ImgHeart{
    position:fixed;
-   left:350px;
+   left:340px;
    display:flex;
    padding:20px;
    padding-top: 15px;
