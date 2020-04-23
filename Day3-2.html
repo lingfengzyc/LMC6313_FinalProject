@@ -32,8 +32,11 @@
 
     <div class="processBar">
         <progress id="progress1" min=0 max=100 name=money value=90 ></progress>
+        <p id="MoneyNumber"></p>
         <progress id="progress2" min=0 max=100 name=emotion value=90></progress>
+        <p id="HeartNumber"></p>
         <progress id="progress3" min=0 max=100 name=virus value=90></progress>
+        <p id="VirusNumber"></p>
     </div>
     
    
@@ -75,6 +78,10 @@
 var showMoney=document.getElementById('progress1').value=localStorage.getItem('Money');
 var showHeart=document.getElementById('progress2').value=localStorage.getItem('Heart'); 
 var showVirus=document.getElementById('progress3').value=localStorage.getItem('Virus'); 
+
+document.getElementById("MoneyNumber").innerHTML = showMoney;
+document.getElementById("HeartNumber").innerHTML = showHeart;
+document.getElementById("VirusNumber").innerHTML = showVirus;
     
 
 function choice1(){

@@ -265,6 +265,33 @@ progress[value="105"]::-webkit-progress-value{
     margin-left: 50px;
 }
 
+#MoneyNumber{
+    display:flex;
+    position:absolute;
+    left:340px;
+    top:43px;
+    color:white;
+    font-family: fantasy;
+}
+
+#HeartNumber{
+    display:flex;
+    position:absolute;
+    left:700px;
+    top:43px;
+    color:white;
+    font-family: fantasy;
+}
+
+#VirusNumber{
+    display:flex;
+    position:absolute;
+    left:1060px;
+    top:43px;
+    color:white;
+    font-family: fantasy;
+}
+
 
 #progress2{
     margin-left: 210px;

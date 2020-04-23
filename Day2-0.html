@@ -36,8 +36,11 @@
 
     <div class="processBar">
         <progress id="progress1" min=0 max=100 name=money value=90 ></progress>
+        <p id="MoneyNumber"></p>
         <progress id="progress2" min=0 max=100 name=emotion value=90></progress>
+        <p id="HeartNumber"></p>
         <progress id="progress3" min=0 max=100 name=virus value=90></progress>
+        <p id="VirusNumber"></p>
     </div>
     
    
@@ -93,6 +96,10 @@ var showVirus=document.getElementById('progress3').value=localStorage.getItem('V
 if (showVirus<80){
      document.getElementById("News3").innerHTML = "Hospitals in your city reported that some nurses were infected by an unknown virus.";
 }
+
+document.getElementById("MoneyNumber").innerHTML = showMoney;
+document.getElementById("HeartNumber").innerHTML = showHeart;
+document.getElementById("VirusNumber").innerHTML = showVirus;
 
 function nextPage(){
     location.href='Day2-1.html';
