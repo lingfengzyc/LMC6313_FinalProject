@@ -311,7 +311,7 @@ progress[value="105"]::-webkit-progress-value{
 #content{
     position:relative;
     width:200px;
-    top:100px;
+    top:90px;
     left:180px;   
 }
 
@@ -345,14 +345,14 @@ progress[value="105"]::-webkit-progress-value{
 
 #resultPic{
     position:fixed;
-    top:140px;
+    top:120px;
     left:520px;  
     height:400px;
 }
 #Next{
   
   position:fixed;
-  bottom:40px;
+  bottom:60px;
   left:600px;
   
   background-color: #4eb5f1;
