@@ -327,7 +327,7 @@ progress[value="105"]::-webkit-progress-value{
     top:30px;
     width:570px;
     z-index:1;
-    left:60px;
+    left:10px;
     font-size:14px;
 /*
     position:relative;
@@ -339,15 +339,15 @@ progress[value="105"]::-webkit-progress-value{
 #content,#newsBg{
 /*  position:absolute;*/
     top:120px;
-    left:320px;  
-    height:400px;
+    left:360px;  
+    height:350px;
 }
 
 #resultPic{
     position:fixed;
     top:120px;
     left:520px;  
-    height:400px;
+    height:380px;
 }
 #Next{
   

@@ -43,8 +43,8 @@ body {
 
 #Next{
   
-  position:relative;
-  bottom:50px;
+  position:absolute;
+  top:550px;
   left:600px;
   
   background-color: #4eb5f1;
